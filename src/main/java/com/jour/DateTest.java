@@ -12,6 +12,9 @@ public class DateTest {
         LocalDateTime now = LocalDateTime.now();
         System.out.println("now: " + now);
 
+        int currentYear = now.getYear();
+        System.out.println("当前时间的年份: " + currentYear);
+
         LocalDate date = LocalDate.of(2025, 3, 18); // 指定日期
         System.out.println("date: " + date);
         LocalDate parse = LocalDate.parse("2025-03-18");
