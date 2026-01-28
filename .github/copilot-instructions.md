@@ -10,7 +10,7 @@ This is a Java 8 Maven project demonstrating the `java.time` API for date and ti
 
 ## Developer Workflows
 - **Build**: `mvn clean compile` - Compiles to `target/classes/`
-- **Run**: `java -cp target/classes com.jour.DateTest` - Executes the main method with console output
+- **Run**: `java -cp target/classes com.jour.Date.DateTest` - Executes the main method with console output
 - **Test Structure**: `src/test/java/` is prepared for JUnit tests (none implemented yet)
 
 ## Code Patterns

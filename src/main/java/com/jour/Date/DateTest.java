@@ -1,8 +1,7 @@
-package com.jour;
+package com.jour.Date;
 
 import java.time.*;
 import java.time.temporal.TemporalAdjusters;
-import java.util.Set;
 
 public class DateTest {
     public static void main(String[] args) {
@@ -18,7 +17,7 @@ public class DateTest {
         LocalDate date = LocalDate.of(2025, 3, 18); // 指定日期
         System.out.println("date: " + date);
         LocalDate parse = LocalDate.parse("2025-03-18");
-        System.out.println("paese: " + parse);
+        System.out.println("parse: " + parse);
 
         LocalDate yesterday = today.minusDays(1);
         LocalDate tomorrow  = today.plusDays(1);
@@ -27,7 +26,7 @@ public class DateTest {
         LocalDate nextYear  = today.plusYears(1);
 
         System.out.println("昨天: " + yesterday + "    " + "明天: " + tomorrow);
-        System.out.println("上个月: " + lastMonth + "  "+ "下一年: " + nextYear);
+        System.out.println("上个月: " + lastMonth + "    "+ "下一年: " + nextYear);
 
         //年
         int year  = today.getYear();
@@ -81,6 +80,8 @@ public class DateTest {
         //所有时区
         /*Set<String> zoneIds = ZoneId.getAvailableZoneIds();
         zoneIds.forEach(System.out::println);*/
+
+
 
     }
 }
